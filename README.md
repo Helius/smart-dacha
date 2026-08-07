@@ -1,4 +1,4 @@
-### Notes
+### Units
 #### Top tank sensor
 - esp32c3 with ext antenna
 - uses wifi to publish self state to a mqtt broker
@@ -16,3 +16,6 @@
 - uses wifi to publish self state and the low tank unit state to the mqtt broker
 - serves also as esp-now hub for the low tank unit
 - controls a servo valve with sensors and pump
+
+### Notes
+- esp-now uses the same channel as wifi - `8`, fix the channel on a router, it allows to be on both network with single esp32c3
